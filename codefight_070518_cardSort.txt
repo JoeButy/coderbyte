@@ -1,0 +1,18 @@
+def maxCardSequence(cards):
+ev = []
+od = []
+for i in cards:
+    if i % 2 == 0:
+        ev.append(i)
+    else:
+        od.append(i)
+
+ev.sort()
+od.sort()
+dk = min(od[0], ev[0])
+
+for j in len(cards):
+    
+
+
+test_set = [3, 2, 8, 1, 4, 3]
