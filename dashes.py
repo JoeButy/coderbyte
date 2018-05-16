@@ -1,4 +1,12 @@
 def dashes(n):
+	'''Create a matrix that has a n width diamond shaped set of dashes and pipes inside
+# i:  3
+#   -  
+#  -|- 
+# -|-|-
+#  -|- 
+#   - 
+	'''
 	i = 1
 	ans = []
 	while len(ans) < 2 * n - 1:
@@ -21,8 +29,8 @@ def dashes(n):
 					elif ((i + j) - n) % 2 == 0:
 						row += '|'
 			ans += [row]
-	return ans
+	return '\n'.join(ans)
 
-for i in range(1,6):
+for i in range(1,5):
 	print '\n\ni: ', i
-	print '\n'.join(dashes(i))
+	print dashes(i)
